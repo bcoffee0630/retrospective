@@ -9,7 +9,7 @@
 <body>
     <div class="container" id="nav">
         <h2 id="title">GAMES</h2>
-        <a href="index.html" id="back">BACK TO HOME</a>
+        <a href="#" id="back" onclick="BackTo()">BACK TO HOME</a>
     </div>
     <div class="container" id="works">
         <div class="content">
@@ -33,5 +33,11 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function BackTo(){
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
