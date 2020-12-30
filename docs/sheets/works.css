@@ -5,7 +5,6 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,0), rgba(0,0,0,.2)), url(../images/Games-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,15 +50,17 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    width: 100%;
 }
 #works .list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 #works .list .section{
     height: 200px;
-    width: 400px;
+    width: 30%;
     float: left;
     margin: 10px 10px;
     display: flex;
