@@ -21,7 +21,7 @@ body{
     width: auto;
 }
 #nav h2{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     margin-left: 20px;
@@ -31,7 +31,7 @@ body{
     letter-spacing: 3px;
 }
 #nav #back{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     margin-right: 20px;
@@ -40,6 +40,11 @@ body{
     font-family: 'Oleo Script', cursive;
     font-size: x-large;
     letter-spacing: 3px;
+}
+#nav #back:hover{
+    transition: .15s ease;
+    transform: scale(1.05);
+    color: rgba(255, 255, 255, .8);
 }
 #works .content{
     position: absolute;
