@@ -1,0 +1,300 @@
+/*Import*/
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+/*ScrollBar*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey;
+    background-color: rgba(255, 255, 255, .4);
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+/*MainContent*/
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.snapParent{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.snapChild{
+    scroll-snap-align: start;
+}
+.nav{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+.nav .navList{
+    float: left;
+    margin-left: 20px;
+}
+.nav .navList a{
+    display: block;
+    height: 36px;
+    width: 5px;
+    background-color: rgba(255, 255, 255, .4);
+    margin-bottom: 1em;
+}
+.nav .navList a:hover{
+    transition: .2s linear;
+    background-color: rgba(255, 255, 255, 1);
+}
+#siteControls{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    z-index: 999;
+}
+#siteControls i{
+    font-size: x-large;
+    color: rgba(255, 255, 255, .4);
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#siteTitle{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    z-index: 999;
+}
+.pageTitle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+}
+#siteTitle h2, .pageTitle h2{
+    color: rgba(255, 255, 255, .4);
+    font-family: 'Oleo Script', cursive;
+    font-size: x-large;
+    letter-spacing: 3px;
+}
+#home{
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5)), url(../images/index-home-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#about{
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5)), url(../images/index-about-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#features{
+    background-image: url(../images/index-features-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#works{
+    background-image: url(../images/index-works-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#contact{
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5)), url(../images/index-contact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*Home*/
+#home .content{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);;
+}
+#home .content h2{
+    color: #ffffff;
+    font-family: 'Oleo Script', cursive;
+    font-size: xxx-large;
+    letter-spacing: 3px;
+}
+#home .content span{
+    color: #eab595;
+    letter-spacing: 3px;
+}
+/*About*/
+#about .content{
+    position: absolute;
+    max-height: 80%;
+    max-width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#about .content p{
+    color: #ffffff;
+    font-size: xx-large;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    margin: 0;
+}
+#about .controls{
+    margin: 0;
+}
+#about .content a{
+    color: #ffffff;
+    font-size: x-large;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    margin-right: 20px;
+}
+/*Features*/
+#features .content{
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border: 1px solid #ffffff;
+}
+#features .content h2{
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    font-family: 'Oleo Script', cursive;
+    font-size: xxx-large;
+    margin: 0 0 50px 0;
+}
+#features .content .featuresList{
+    max-width: 100%;
+}
+#features .content .featuresList span{
+    color: rgba(255, 255, 255, .8);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+}
+/*Works*/
+#works .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+#works .content .section{
+    width: 50%;
+    height: 300px;
+    float: left;
+}
+#works .content .section .box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#works .content .section .box .img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#works .content .section .box h2{
+    position: absolute;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Oleo Script', cursive;
+    font-size: xxx-large;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    opacity: 0;
+}
+#works .content .section .box:hover .img{
+    transition: .1s linear;
+    filter: blur(3px);
+    transform: scale(1.01);
+}
+#works .content .section .box:hover h2{
+    transition: .2s linear;
+    opacity: 1;
+}
+/*Contact*/
+#contact .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+}
+#contact .inform{
+    width: 50%;
+    height: 500px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+#contact .inform p{
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+}
+#contact .inform p span#bold{
+    font-weight: bold;
+}
+#contact .inform p span#mail{
+    font-size: 24px;
+}
+#contact .inform p a{
+    color: #ffffff;
+    font-size: 50px;
+    text-decoration: none;
+}
+#contact .inform p a:hover i{
+    transition: .2s linear;
+    transform: scale(1.05);
+}
+#contact .location{
+    width: 50%;
+    height: 500px;
+    float: left;
+}
+#contact .location iframe{
+    width: 100%;
+    height: 100%;
+}

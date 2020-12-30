@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="sheets/main.css">
+
+        <title>Document</title>
+    </head>
+    <body>
+        <!--Audio-->
+        <audio src="sounds/bgm.mp3" id="audio"></audio>
+
+        <!--Fixed UI/UX-->
+        <div id="siteTitle">
+            <h2>Retrospective</h2>
+        </div>
+        <div class="nav">
+            <div class="navList">
+                <a href="#home" class="section"></a>
+                <a href="#about" class="section"></a>
+                <a href="#features" class="section"></a>
+                <a href="#works" class="section"></a>
+                <a href="#contact" class="section"></a>
+            </div>
+        </div>
+        <div id="siteControls">
+            <a href="#" onclick="audio()">
+                <i class="fa fa-music" id="music"></i>
+            </a>
+        </div>
+
+        <!--MainContent-->
+        <div class="container snapParent">
+            <div class="page snapChild" id="home">
+                <div class="content">
+                    <h2>
+                        Hello,<br>
+                        I'm
+                        <span id="typed"></span>
+                    </h2>
+                </div>
+
+                <div class="pageTitle">
+                    <h2>HOME</h2>
+                </div>
+            </div>
+
+            <div class="page snapChild" id="about">
+                <div class="content">
+                    <p id="paragraph">
+                        我是林定邦，一位從馬來西亞漂洋過海來到台灣唸書的大學生；今年22歲，巨蟹座。<br><br>
+                        來台數年，很喜歡台灣的風土民情，這裡猶如我的第二個家、讓人倍感安心。<br><br>
+                        雖說2020年發生了許多事情，可我仍然希望在這裡與你分享我在這些日子裡所完成的種種事跡，與你共同見證我這些日子以來的成長。<br><br>
+                    </p>
+                    <div class="controls">
+                        <a href="#" onclick="LargeFont()">LargeFont</a>
+                        <a href="#" onclick="SmallFont()">SmallFont</a>
+                    </div>
+                </div>
+
+                <div class="pageTitle">
+                    <h2>ABOUT</h2>
+                </div>
+            </div>
+
+            <div class="page snapChild" id="features">
+                <div class="content">
+                    <h2>What I do in this website?</h2>
+                    <div class="featuresList">
+                        <span>打字機效果</span>
+                        <span>覆蓋式背景</span>
+                        <span>側邊導航欄</span>
+                        <span>自動貼合頁面</span>
+                        <span>絲滑頁面捲動</span>
+                        <span>自訂側邊滑竿樣式</span>
+                        <span>字型調整按鈕</span>
+                        <span>滑鼠Hover效果</span>
+                        <span>嵌入式地圖</span>
+                        <span>社群媒體外部鏈接</span>
+                        <span>背景音樂開關</span>
+                        <span>音樂開關細節動畫</span>
+                        <span>X 加載網頁畫面</span>
+                        <span>X 相對路徑鏈接</span>
+                        <span>X 文件下載鏈接</span>
+                        <span>X 自適應（RWD）網頁</span>
+                        <span>X 發佈至GitHub Page</span>
+                    </div>
+                </div>
+
+                <div class="pageTitle">
+                    <h2>FEATURES</h2>
+                </div>
+            </div>
+
+            <div class="page snapChild" id="works">
+                <div class="content">
+                    <div class="section">
+                        <a href="#" class="box">
+                            <div class="img" style="background-image: url(images/ImageSynthesis-bg.png);"></div>
+                            <h2>ImageSynthesis</h2>
+                        </a href="#">
+                    </div>
+                    <div class="section">
+                        <a href="#" class="box">
+                            <div class="img" style="background-image: url(images/Games-bg.png);"></div>
+                            <h2>Games</h2>
+                        </a href="#">
+                    </div>
+                    <div class="section">
+                        <a href="#" class="box">
+                            <div class="img" style="background-image: url(images/Website-bg.png);"></div>
+                            <h2>Websites</h2>
+                        </a href="#">
+                    </div>
+                    <div class="section">
+                        <a href="#" class="box">
+                            <div class="img" style="background-image: url(images/Photography-bg.jpg);"></div>
+                            <h2>Photography</h2>
+                        </a href="#">
+                    </div>
+                </div>
+                <div class="pageTitle">
+                    <h2>WORKS</h2>
+                </div>
+            </div>
+
+            <div class="page snapChild" id="contact">
+                <div class="content">
+                    <div class="inform">
+                        <p>
+                            <span id="bold">Design l
+                            </span>
+                            Ling Ding Bang
+                            <br>
+                            <span id="mail">beforecoffeecold@gmail.com</span><br><br>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.twitter.com" target="_blank">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="location">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.44224609148!2d121.39953451545898!3d25.019061545043005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681d7f03b3172f%3A0x3b5230131d1dd08c!2z6b6N6I-v56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1609069597169!5m2!1szh-TW!2stw"
+                            width="600"
+                            height="450"
+                            frameborder="0"
+                            style="border:0;"
+                            allowfullscreen=""
+                            aria-hidden="false"
+                            tabindex="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="pageTitle">
+                    <h2>CONTACT</h2>
+                </div>
+            </div>
+        </div>
+
+        <!--Script-->
+        <script src="scripts/typed.js"></script>
+        <script>
+            var typed = new Typed('#typed', {
+                strings: [
+                    "Ling Ding Bang.", "a Student.", "a Developer."
+                ],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true
+            });
+        </script>
+        <script>
+            function LargeFont() {
+                document
+                    .getElementById("paragraph")
+                    .style
+                    .fontSize = "xx-large";
+            }
+            function SmallFont() {
+                document
+                    .getElementById("paragraph")
+                    .style
+                    .fontSize = "x-large";
+            }
+        </script>
+        <script>
+            var x = document.getElementById("audio");
+            x.volume = .5;
+            document
+                .getElementById("music")
+                .style
+                .animationPlayState = "paused";
+
+            function audio() {
+                if (x.paused) {
+                    x.play();
+                    document
+                        .getElementById("music")
+                        .style
+                        .animationPlayState = "running";
+                } else {
+                    x.pause();
+                    document
+                        .getElementById("music")
+                        .style
+                        .animationPlayState = "paused";
+                }
+            }
+            x.loop = true;
+        </script>
+    </body>
+</html>
